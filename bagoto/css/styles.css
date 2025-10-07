@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+body {
+    font-family: serif;
+    background-color: #111111;
+    margin: 0;
+    padding: 0;
+    padding-top: 3.5rem;
+    
+}
+
+.navbar-container {
+    background-color: #000000;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.2rem;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.8rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+
+.nav-list li a:hover {
+    color: #838383;
+}
+
+.nav-list li#Enter a {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.3s
+}
+
+.nav-list li#Enter a:hover {
+    background-color: #838383;
+    color: rgb(0, 0, 0);
+}
+
+.main-banner {
+  color: white;
+  font-size: 45px;
+  padding: 10rem 0 16rem 2.5rem;
+  background-image: url('../img/bagotto_styles.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.content {
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.up {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.up div img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.up div {
+    width: 33%;
+    margin: 0 0.6rem;
+}
+
+.up div p {
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 1.2rem 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+footer img {
+  width: 100%;       
+  height: auto;     
+  margin: 1rem auto; 
+  display: block;
+}
+
+.content h1 {
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.content p {
+    color: #fff;
+    margin: 0 auto 1.2rem auto;
+    word-break: break-word;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    background-image: url('../img/ganhar-dinheiro.jpg');
+    background-size: cover;
+    width: 100%;
+    padding: 20rem 0;
+    background-image: radial-gradient(rgba(184, 184, 184, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.services {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.service img {
+    width: 100%;
+    height: 10rem;
+}
+
+.service {
+    text-align: center;
+    width: 23%;
+}
+
+.service li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.service1 {
+    border-radius: 0.625rem;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(82, 82, 82));
+    padding: 1.25rem;
+}
+
+ul {
+    padding: 0;
+}
+
+.service2 {
+    border-radius: 0.625rem;
+    background-image: linear-gradient(rgb(31, 22, 12), rgb(155, 103, 60));
+    padding: 1.25rem;
+}
+
+.service3 {
+    border-radius: 0.625rem;
+    background-image: linear-gradient(rgb(44, 6, 6), rgb(148, 44, 87));
+    padding: 1.25rem;
+}
+
+.service4 {
+    border-radius: 0.625rem;
+    background-image: linear-gradient(rgb(54, 0, 0), rgb(214, 67, 67));
+    padding: 1.25rem;
+}
+
+.aud {
+    text-align: center;
+    font-size: 2rem;
+    background-image: url('../img/ganhar-dinheiro.jpg');
+    background-size: cover;
+    width: 100%;
+    padding: 20rem 0;
+    background-image: radial-gradient(rgba(184, 184, 184, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    height: 80%;
+    background-image: radial-gradient(rgba(184, 184, 184, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*responsividade*/
+@media (max-width: 670px) {
+    .navbar {
+    justify-content: none;
+    }
+
+    .logo img {
+    width: 2.5rem;
+    }
+
+    .nav-list {
+    gap: 0.1rem;
+    }
+
+    .nav-list li a {
+    font-size: 0.8rem;
+    }
+
+    .up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .up div {
+        width: 98%;
+        margin: 1rem 0;
+    }
+
+    .up div p {
+        font-size: 1rem;
+    }
+
+    .title {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10rem 2rem;
+    }
+
+    .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.3rem;
+    }
+
+    .service img {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .contact {
+    font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 670px) and (max-width: 1356px) {
+    .services {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .service {
+        width: 45%;
+    }
+}
